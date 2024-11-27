@@ -1,0 +1,316 @@
+body {
+    background-color: #2e004d; /* Morado oscuro alienígena */
+    color: #00ff00; /* Verde neón */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 10px solid #ff0000; /* Borde rojo neón */
+    box-shadow: 0 0 20px #ff0000; /* Sombra roja neón */
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+h1, p, h2 {
+    text-shadow: 0 0 10px #00ff00; /* Sombra de texto verde neón */
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+nav, aside {
+    position: fixed;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+nav {
+    left: 0;
+}
+
+aside {
+    right: 0;
+}
+
+nav ul, aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    animation: fall 20s linear infinite;
+}
+
+nav li, aside li {
+    margin: 10px 0;
+}
+
+nav img, aside img {
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+
+/* MENUUU */
+.menu-container {
+    background-color: #2e004d;
+    padding: 20px;
+    max-width: 5000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    justify-content: flex-start;
+    margin-top: 0;
+    
+}
+
+.menu-title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff00;
+    font-size: 3em;
+    margin-top: 20px;
+    font-size: 6.2em;
+}
+
+.section {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.section h2 {
+    font-weight: bold;
+    color: rgb(0, 255, 17); 
+    border-bottom: 2px solid #c800ff; 
+
+    background: linear-gradient(135deg, #f0f, #0ff, #ff0, rgb(0, 255, 204), rgb(255, 255, 255), #f0f);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    animation: rainbow-text 6s ease infinite;
+
+}
+
+@keyframes rainbow-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item img {
+    width: 80px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    vertical-align: middle; /* Alinea la imagen verticalmente al centro del texto */
+    margin-left: 5px; /* Añade un pequeño espacio entre el texto y la imagen */
+}
+
+/*Textos centrales de los productos*/
+/*Textos centrales de los productos*/
+.name {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 20px; /* Ajusta el tamaño de Truena Pop */
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente con la imagen */
+}
+
+.dose {
+    text-shadow: 0 0 10px #ff0000;
+    font-weight: bold;
+    color: rgb(225, 255, 0);
+    font-size: 20px; 
+    display: flex;
+
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    text-align: center;
+}
+
+.price {
+    text-shadow: 0 0 10px #ff0000;
+    font-weight: bold;
+    font-size: 20px; /* Ajusta el tamaño de Truena Pop */
+    display: flex;
+    
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    text-align: center;
+}
+/*Textos centrales de los productos*/
+/*Textos centrales de los productos*/
+
+.item:last-child {
+    border-bottom: none;
+}
+
+#agregar {
+    background-color: #26a82a; 
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex; /* Usar flexbox para centrar el texto */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+    
+
+    width: 80px; 
+    height: 80px;
+    
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+#agregar:hover {
+    background-color: #2cc031; 
+    color: black; 
+    border: 2px solid #2cc031;
+    
+}
+
+/* Efecto al hacer clic en el botón */
+#agregar:active {
+    background-color: #3e8e41;
+    color: #2cc031;
+    border: none;
+}
+
+.comunicacion {
+    margin-top: 50px;
+}
+
+.comunicacion a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00ff00; /* Verde neón */
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #00ff00; /* Sombra de texto verde neón */
+}
+
+
+/*TODO DE CARRITO*/
+/*TODO DE CARRITO*/
+#carrito {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #2e004d;
+    color: #00ff00;
+    border: 2px solid #ff0000;
+    padding: 20px;
+    box-shadow: 0 0 20px #ff0000;
+    text-align: left;
+}
+
+#carrito h2 {
+    margin: 0 0 10px 0;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+#carrito-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+#carrito-lista li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrito-lista li button {
+    background-color: #ff0000;
+    color: #2e004d;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+#carrito-lista li button:hover {
+    background-color: #cc0000;
+}
+
+#carrito-total {
+    font-weight: bold;
+}
+
+#toggle-carrito {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff0000;
+    color: #2e004d;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#toggle-carrito:hover {
+    background-color: #cc0000;
+}
+
+/* Estilo del botón de MOSTRAR CARRO */
+#mostrar-carrito {
+    background-color: #26a82a; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+#mostrar-carrito:hover {
+    background-color: #2cc031; 
+    color: black; 
+    border: 2px solid #2cc031;
+    
+}
+
+/* Efecto al hacer clic en el botón */
+#mostrar-carrito:active {
+    background-color: #3e8e41;
+    color: #2cc031;
+    border: none;
+}
